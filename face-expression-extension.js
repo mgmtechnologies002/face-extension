@@ -97,4 +97,5 @@ class FaceExpression {
 }
 
 Scratch.extensions.register(new FaceExpression());
-<script src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+await faceapi.nets.tinyFaceDetector.loadFromUri('https://your-username.github.io/face-extension/models');
+await faceapi.nets.faceExpressionNet.loadFromUri('https://your-username.github.io/face-extension/models');
